@@ -268,7 +268,7 @@ These artifacts help us:
 
 ## High-Level Design (HLD)
 <style scoped>
-section p, section li { font-size: 0.90rem; line-height: 1.4; }
+section p, section li { font-size: 0.80rem; line-height: 1.4; }
 section h3 { font-size: 1.1rem; }
 </style>
 
@@ -287,7 +287,7 @@ section h3 { font-size: 1.1rem; }
 
 ## Low-Level Design (LLD)
 <style scoped>
-section p, section li { font-size: 0.75rem; line-height: 1.4; }
+section p, section li { font-size: 0.69rem; line-height: 1.4; }
 section h3 { font-size: 1rem; }
 </style>
 
@@ -332,7 +332,6 @@ section h3 { font-size: 1rem; }
 - System must send notifications on deployment completion
 - Support rollback to previous versions
 
-**Focus**: WHAT features the platform provides
 
 ---
 
@@ -448,8 +447,8 @@ What do I mean by **"cloud vendors offer the ultimate platform?"**
 
 **Platform Engineering Workflow:**
 
-1. <span class="green-text">**Define Requirements**</span> - NFRs, business needs
-2. <span class="green-text">**Design**</span> - Architecture, components, implementation
-3. <span class="green-text">**Build**</span> - Implement the requirements
-4. <span class="green-text">**Document**</span> - ADRs, guides, runbooks
-5. <span class="green-text">**Iterate**</span> - Continuous improvement
+<span class="green-text">**Define Requirements**</span> - NFRs, business needs
+<span class="green-text">**Design**</span> - Architecture, components, implementation
+<span class="green-text">**Build**</span> - Implement the requirements
+<span class="green-text">**Document**</span> - ADRs, guides, runbooks
+<span class="green-text">**Iterate**</span> - Continuous improvement
