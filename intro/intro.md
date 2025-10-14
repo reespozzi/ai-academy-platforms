@@ -6,12 +6,8 @@ backgroundColor: #ffffff
 color: #333333
 style: |
   section {
-    background: #ffffff;
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 60px;
-    color: #333333;
-    box-sizing: border-box;
-    overflow: hidden;
   }
   
   h1 {
@@ -19,120 +15,42 @@ style: |
     font-size: 2.8rem;
     font-weight: 700;
     text-align: center;
-    text-shadow: 0 2px 4px rgba(46, 139, 87, 0.1);
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    margin-bottom: 1.5rem;
   }
   
   h2 {
     color: #1E90FF;
     font-size: 1.8rem;
     font-weight: 600;
-    margin-bottom: 1rem;
     border-bottom: 3px solid #2E8B57;
     padding-bottom: 0.5rem;
-    display: inline-block;
-    line-height: 1.3;
+    margin-bottom: 1rem;
   }
   
   h3 {
     color: #2E8B57;
     font-size: 1.4rem;
     font-weight: 600;
-    margin: 1rem 0 0.8rem 0;
-    line-height: 1.3;
-  }
-  
-  p, li {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    color: #444444;
-    margin: 0.6rem 0;
-  }
-  
-  blockquote {
-    background: rgba(46, 139, 87, 0.05);
-    border-left: 5px solid #2E8B57;
-    padding: 1rem;
     margin: 1rem 0;
-    border-radius: 8px;
-    font-style: italic;
-    font-size: 1rem;
-    color: #333333;
-    line-height: 1.4;
   }
   
-  table {
-    background: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 2px solid rgba(46, 139, 87, 0.2);
-    box-shadow: 0 4px 12px rgba(46, 139, 87, 0.1);
-    font-size: 0.95rem;
-  }
-  
-  th {
-    background: #2E8B57;
-    color: #ffffff;
-    font-weight: 600;
-    padding: 0.8rem;
-    font-size: 1rem;
-  }
-  
-  td {
-    padding: 0.8rem;
-    border-bottom: 1px solid rgba(46, 139, 87, 0.1);
-    color: #444444;
-  }
-  
-  ul, ol {
-    margin: 0.8rem 0;
-    padding-left: 1.5rem;
+  ul {
+    list-style: none;
+    padding-left: 0;
   }
   
   li {
-    margin: 0.5rem 0;
-    padding-left: 0.3rem;
+    padding-left: 1.5rem;
+    margin: 0.8rem 0;
+    position: relative;
   }
   
-  code {
-    background: rgba(46, 139, 87, 0.1);
+  li::before {
+    content: "●";
     color: #2E8B57;
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
-    font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  }
-  
-  .highlight {
-    background: linear-gradient(45deg, #2E8B57, #1E90FF, #00CED1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 700;
-    background-size: 200% 200%;
-    animation: gradientShift 3s ease-in-out infinite;
-  }
-  
-  @keyframes gradientShift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-  }
-  
-  .blue-text {
-    color: #1E90FF;
-    font-weight: 600;
-  }
-  
-  .green-text {
-    color: #2E8B57;
-    font-weight: 600;
-  }
-  
-  .gradient-border {
-    border: 3px solid;
-    border-image: linear-gradient(45deg, #2E8B57, #1E90FF) 1;
-    padding: 1rem;
-    border-radius: 8px;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
   }
   
   strong {
@@ -140,35 +58,24 @@ style: |
     font-weight: 600;
   }
   
-  section.title {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  blockquote {
+    border-left: 5px solid #2E8B57;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #555;
   }
   
-  .emoji {
-    font-size: 1.5rem;
-    margin-right: 0.8rem;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  header {
-    color: #666666;
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-  
-  footer {
-    color: #666666;
-    font-size: 0.5rem;
-    font-weight: 500;
+  code {
+    background: #f4f4f4;
+    color: #2E8B57;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-family: monospace;
   }
 
-header: 'Platform Engineering | Kainos'
-footer: 'AI-Native Academy 2025'
+header: 'Kainos'
+footer: 'AI-Native Academy 2025 | Platform Engineering'
 ---
 
 # Platform Engineering
@@ -198,7 +105,6 @@ footer: 'AI-Native Academy 2025'
 
 ---
 
-## Key Goals
 
 **Stability**: The business cares about uptime! 
 
@@ -207,8 +113,6 @@ footer: 'AI-Native Academy 2025'
 
 ---
 
-## Key Goals
-
 **Developer Enablement**: How do we reduce the number of "I need a..." requests
 
 > Focusses on tooling and workflows to enable developers to build the things that they need.
@@ -216,7 +120,6 @@ footer: 'AI-Native Academy 2025'
 
 ---
 
-## Key Goals
 
 **DevEx (Developer Experience)**: Make developers' lives easier!
 
@@ -225,7 +128,6 @@ footer: 'AI-Native Academy 2025'
 
 ---
 
-## Key Goals
 
 **Speed**: Metrics metrics and more metrics
 
@@ -234,7 +136,6 @@ footer: 'AI-Native Academy 2025'
 
 ---
 
-## Key Goals
 
 **Standardisation**: Consistency across teams and projects!
 
