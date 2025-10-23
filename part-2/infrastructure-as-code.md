@@ -178,7 +178,7 @@ footer: 'AI-Native Academy 2025'
 
 ## The Problem with "ClickOps"
 
-### <span class="emoji">🤔</span> **You've Been Clicking Around the Portal...**
+### **You've Been Clicking Around the Portal...**
 
 **What happens when you need to:**
 - Recreate your environment?
@@ -190,7 +190,7 @@ footer: 'AI-Native Academy 2025'
 ---
 
 
-### <span class="emoji">😰</span> **Manual approaches lead to:**
+### **Manual approaches lead to:**
 - Inconsistency between environments
 - "Configuration drift" over time
 - No version history
@@ -222,7 +222,7 @@ footer: 'AI-Native Academy 2025'
 
 ## Infrastructure as Code Tools
 
-### <span class="emoji">🛠️</span> **The Landscape**
+### **Offerings**
 
 | Tool | Type | Best For |
 |------|------|----------|
@@ -236,7 +236,7 @@ footer: 'AI-Native Academy 2025'
 
 ## Why Terraform?
 
-### <span class="emoji">🌟</span> **The Industry Standard**
+### **The Industry Standard**
 
 - **Multi-cloud:** Works with Azure, AWS, GCP, and 1000+ providers
 - **Declarative:** Describe what you want, not how to build it
@@ -248,7 +248,7 @@ footer: 'AI-Native Academy 2025'
 
 ---
 
-### <span class="emoji">🔧</span> **How Terraform Works**
+###  **How Terraform Works**
 
 ```
 1. Write configuration (.tf files)
@@ -264,7 +264,7 @@ footer: 'AI-Native Academy 2025'
 
 ---
 
-### <span class="emoji">📋</span> **Terraform File Structure**
+### **Terraform File Structure**
 
 **Typical project layout:**
 
@@ -285,7 +285,7 @@ my-infrastructure/
 
 ## Azure Provider Setup
 
-### <span class="emoji">☁️</span> **Connecting Terraform to Azure**
+### **Connecting Terraform to Azure**
 
 **The Azure Provider** enables Terraform to manage Azure resources
 
@@ -296,7 +296,7 @@ my-infrastructure/
 
 ## Variables and Outputs
 
-### <span class="emoji">🔢</span> **Making Configuration Flexible**
+### **Making Configuration Flexible**
 
 **Variables = Inputs**
 - Parameterize your infrastructure
@@ -328,7 +328,7 @@ my-infrastructure/
 
 ---
 
-### <span class="emoji">✨</span> **Module Best Practices**
+### **Module Best Practices**
 
 **Good modules are:**
 
@@ -341,7 +341,7 @@ my-infrastructure/
 
 ---
 
-### <span class="emoji">🌐</span> **Module Sources**
+### **Module Sources**
 
 **Where to get modules:**
 
@@ -382,7 +382,7 @@ my-infrastructure/
 
 ---
 
-### <span class="emoji">⚠️</span> **State File Challenges**
+### **State File Challenges**
 
 **Local state problems:**
 - ❌ Not shared between team members
@@ -395,7 +395,7 @@ my-infrastructure/
 
 ---
 
-### <span class="emoji">☁️</span> **Remote State Backends**
+### **Remote State Backends**
 
 **Store state remotely for team collaboration:**
 
@@ -435,9 +435,8 @@ my-infrastructure/
 
 ---
 
-### <span class="emoji">✅</span> **State Best Practices**
+###  **State Best Practices**
 
-**Essential practices:**
 
 1. **Always use remote state** for team projects
 2. **Enable state locking**
@@ -449,7 +448,7 @@ my-infrastructure/
 
 ---
 
-### <span class="emoji">🔄</span> **The Development Cycle**
+### **The Development Cycle**
 
 **Step 1: Write**
 - Create or modify .tf files
@@ -489,7 +488,7 @@ my-infrastructure/
 
 ---
 
-### <span class="emoji">🎯</span> **Useful Terraform Commands**
+### **Useful Terraform Commands**
 
 
 | Command | Purpose |
@@ -507,7 +506,7 @@ my-infrastructure/
 
 ## Resource Dependencies
 
-### <span class="emoji">🔗</span> **Managing Relationships**
+### **Managing Relationships**
 
 **Terraform automatically handles dependencies:**
 
