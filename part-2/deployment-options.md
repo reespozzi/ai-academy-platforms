@@ -185,7 +185,7 @@ footer: 'AI-Native Academy 2025'
 ---
 
 
-### <span class="emoji"></span> **Next Challenge: Where Do Containers Actually Run?**
+### **Next Challenge: Where Do Containers Actually Run?**
 
 > Your image is ready. Now you need to deploy it to Azure!
 
@@ -237,7 +237,7 @@ A container engine is the software that:
 
 ---
 
-### <span class="emoji">🔍</span> **Docker vs containerd**
+### **Docker vs containerd**
 
 **Docker:**
 - Full-featured development platform
@@ -253,7 +253,7 @@ A container engine is the software that:
 
 ## Understanding DNS
 
-### <span class="emoji">🌐</span> **What is DNS?**
+### **What is DNS?**
 
 **DNS = Domain Name System**
 
@@ -267,7 +267,7 @@ Think of it as **the internet's phonebook**
 
 ---
 
-### <span class="emoji">🔍</span> **How DNS Works in Practice**
+### **How DNS Works in Practice**
 
 **When someone wants to access your application:**
 
@@ -282,7 +282,7 @@ Think of it as **the internet's phonebook**
 
 ---
 
-### <span class="emoji">🛠️</span> **Setting Up DNS: The Traditional Way**
+### **Setting Up DNS: The Traditional Way**
 
 **To make your container accessible on the internet, you would typically need to:**
 
@@ -313,7 +313,7 @@ Think of it as **the internet's phonebook**
 
 ---
 
-### <span class="emoji">✨</span> **How Cloud Platforms Help**
+### **How Cloud Platforms Help**
 
 **Automatic DNS names:**
 - Platform provides a domain automatically
@@ -340,7 +340,7 @@ Think of it as **the internet's phonebook**
 
 ---
 
-### <span class="emoji">✨</span> **How Azure Simplifies DNS**
+### **How Azure Simplifies DNS**
 
 **Azure container services make this much easier:**
 
@@ -377,7 +377,7 @@ https://facebook.azure.z35.windows.net doesn't quite sound as good
 
 ## Azure Container Instances (ACI)
 
-### <span class="emoji">⚡</span> **Fastest Way to Run a Container**
+### **Fastest Way to Run a Container**
 
 - Deploy a container in seconds (managed DNS!)
 - No servers to manage
@@ -428,7 +428,7 @@ https://facebook.azure.z35.windows.net doesn't quite sound as good
 
 ## Azure App Service
 
-### <span class="emoji">🚀</span> **Platform-as-a-Service for Web Apps**
+### **Platform-as-a-Service for Web Apps**
 
 **Managed platform for hosting applications:**
 - Deploy containers or code
@@ -482,7 +482,7 @@ https://facebook.azure.z35.windows.net doesn't quite sound as good
 
 ## Azure Container Apps
 
-### <span class="emoji">🎨</span> **The Modern Container Platform**
+### **The Modern Container Platform**
 
 **Built on Kubernetes, without the Kubernetes complexity:**
 - Microservices-first design
@@ -534,7 +534,7 @@ https://facebook.azure.z35.windows.net doesn't quite sound as good
 
 ---
 
-### <span class="emoji">⚡</span> **Container Apps Scaling**
+### **Container Apps Scaling**
 
 **Dynamic and Event-Driven:**
 
@@ -554,7 +554,7 @@ Scales based on:
 
 ## Azure Kubernetes Service (AKS)
 
-### <span class="emoji">🎯</span> **Enterprise Container Orchestration**
+### **Enterprise Container Orchestration**
 
 **Fully-managed Kubernetes on Azure:**
 - Complete Kubernetes experience
@@ -621,7 +621,7 @@ Scales based on:
 
 ---
 
-### <span class="emoji">📊</span> **AKS Architecture**
+### **AKS Architecture**
 
 **Key Kubernetes Concepts:**
 
@@ -655,7 +655,7 @@ Scales based on:
 
 ## Real-World Scenarios
 
-### <span class="emoji">🌟</span> **Scenario 1: Startup MVP**
+### **Scenario 1: Startup MVP**
 
 **Context:** Small team, limited budget, simple API
 
@@ -667,7 +667,7 @@ Scales based on:
 
 ---
 
-### <span class="emoji">🏢</span> **Scenario 2: Enterprise Web Application**
+### **Scenario 2: Enterprise Web Application**
 
 **Context:** Large company, multiple environments, compliance requirements
 
@@ -680,7 +680,7 @@ Scales based on:
 
 ---
 
-### <span class="emoji">⚡</span> **Scenario 3: Batch Data Processing**
+### **Scenario 3: Batch Data Processing**
 
 **Context:** Nightly data processing job, runs for 2 hours
 
@@ -692,7 +692,7 @@ Scales based on:
 
 ---
 
-### <span class="emoji">🎮</span> **Scenario 4: Complex Microservices Platform**
+### **Scenario 4: Complex Microservices Platform**
 
 **Context:** 50+ microservices, dedicated DevOps team, multi-region
 
@@ -706,7 +706,7 @@ Scales based on:
 
 ## Development Workflow
 
-### <span class="emoji">🛠️</span> **Local to Cloud**
+### **Local to Cloud**
 
 
 1. **Develop locally** with Docker Desktop
@@ -719,7 +719,7 @@ Scales based on:
 
 ## Coming Up: Infrastructure as Code
 
-### <span class="emoji"></span> **Manual Deployment is Just the Start**
+### **Manual Deployment is Just the Start**
 
 - Define infrastructure in code
 - Terraform for Azure resources
@@ -731,7 +731,7 @@ Scales based on:
 
 ## Discussion Points
 
-### <span class="emoji"></span> **Think About**
+### **Think About**
 
 1. What type of applications would you deploy on each service?
 2. How would you decide between Container Apps and App Service?

@@ -178,7 +178,7 @@ footer: 'AI-Native Academy 2025'
 
 ## Why Do We Need Containers?
 
-### <span class="emoji">🤔</span> **The Problem: "It works on my machine!"**
+### **The Problem: "It works on my machine!"**
 
 You've just built your application:
 - ✅ Works perfectly on your laptop
@@ -189,7 +189,7 @@ You've just built your application:
 
 ---
 
-### <span class="emoji">📦</span> **The Solution: Containers**
+### **The Solution: Containers**
 
 **A container packages everything your app needs:**
 Your code + runtime + dependencies + system tools
@@ -202,7 +202,7 @@ Your code + runtime + dependencies + system tools
 
 ## Why Virtual Machines?
 
-### <span class="emoji">💻</span> **Before Containers, There Were VMs**
+### **Before Containers, There Were VMs**
 
 **The problem VMs solved:**
 - One physical server = one application
@@ -301,9 +301,7 @@ Your code + runtime + dependencies + system tools
 
 ## Images vs Containers
 
-### <span class="emoji">🎯</span> **Understanding the Difference**
-
-**Image = Recipe | Container = Cake**
+### **Understanding the Difference**
 
 **Docker Image:**
 - **Read-only** template or blueprint
@@ -311,6 +309,8 @@ Your code + runtime + dependencies + system tools
 - Built once from a Dockerfile
 - Stored in registries (Docker Hub, GHCR)
 - Can create many containers from one image
+---
+
 
 **Container:**
 - **Running instance** of an image
@@ -357,7 +357,7 @@ Your code + runtime + dependencies + system tools
 - Run as non-root users
 ---
 
-**4. Orchestration** ☸️
+**4. Orchestration**
 - Kubernetes for production scale
 - Auto-scaling, self-healing, load balancing
 
