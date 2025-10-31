@@ -1,4 +1,4 @@
-# Task 3: Stretch Challenge
+# Task 3
 
 ## Objective
 
@@ -17,7 +17,7 @@ For those who complete Tasks 1 and 2 quickly - take your skills further.
 
 ### Challenge A: Private Database Connection
 
-Deploy Azure PostgreSQL Flexible Server and connect it privately to your Container App.
+Deploy Azure PostgreSQL Flexible Server and connect it privately to your Container App for the backend
 
 **Goals:**
 - PostgreSQL in a VNet
@@ -29,11 +29,13 @@ Deploy Azure PostgreSQL Flexible Server and connect it privately to your Contain
 - Production databases shouldn't be public
 - Private endpoints improve security
 - Real-world architecture pattern
-
 ---
 
 
-### Challenge B: Azure Bastion
+### I'm all done
+If you get all this done and your app fully rigged up in the cloud, have a look at:
+
+### Stretch Challenge: Azure Bastion
 
 Set up Azure Bastion for secure VM access.
 

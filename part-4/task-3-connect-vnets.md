@@ -1,4 +1,4 @@
-# Task 2: Connect Two Isolated VNets
+# Task 3: Connect Two Isolated VNets
 
 ## Objective
 
@@ -8,13 +8,11 @@ Create two completely isolated Virtual Networks with VMs, then enable communicat
 
 ## Prerequisites
 
-- Completed Task 1 (Virtual Networks)
-- Understanding of NSGs
-- SSH key pair for VM access
+- Completed Task 1 & 2
 
 ---
 
-## Your Task
+## Your Challenges
 
 ### Part A: Create Two Isolated VNets
 
