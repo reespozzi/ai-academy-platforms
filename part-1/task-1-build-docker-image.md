@@ -3,7 +3,7 @@
 
 ## Objective
 
-Create a Docker image for your existing Node.js application and run it as a container.
+Create a Docker image for your existing Node.js application and run it as a container and for your backend API.
 
 Remember, you will need to explain this if called on at the end! Make sure you take the time to learn about the why
 
@@ -11,7 +11,6 @@ Remember, you will need to explain this if called on at the end! Make sure you t
 
 ## Prerequisites
 
-- Your Node.js application code (from earlier exercises)
 - Docker Desktop installed and running
 - GitHub Copilot or AI assistant available
 
@@ -21,10 +20,10 @@ Remember, you will need to explain this if called on at the end! Make sure you t
 
 ### Part A: Create a Dockerfile
 
-Using AI assistance, create a `Dockerfile` for your Node.js application.
+Using AI assistance, create a `Dockerfile` for your application.
 
 **Requirements:**
-- Use an appropriate Node.js base image
+- Use an appropriate base image
 - Set up the working directory
 - Install dependencies efficiently
 - Copy your application code
@@ -33,7 +32,7 @@ Using AI assistance, create a `Dockerfile` for your Node.js application.
 
 **Suggested AI Prompts:**
 - "Create a Dockerfile for my Node.js Express application"
-- "What's the best base image for a Node.js 18 application?"
+- "What's the best base image for a pythong fast api application?"
 - "Explain each line of this Dockerfile"
 
 ---
@@ -66,6 +65,15 @@ Run your containerized application and verify it works.
 
 ---
 
+
+### Repeat the above steps and share between your team until you are happy enough with a Dockerfile for both applications to raise a PR
+
+
+You may be able to run your app in a fully containerised way here!
+
+---
+
+
 ### Part D: Container Management
 
 Explore basic Docker commands with AI assistance.
@@ -84,7 +92,8 @@ Explore basic Docker commands with AI assistance.
 ✅ Image builds without errors  
 ✅ Container runs successfully  
 ✅ Application accessible and responding  
-✅ Can manage container lifecycle
+✅ Dockerfile for both applications in GitHub
+
 
 ---
 
