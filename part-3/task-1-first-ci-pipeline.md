@@ -32,7 +32,7 @@ Before building, understand what GitHub Actions provides.
 
 ---
 
-### Part B: Create Your First Workflow
+### Part B: Create Your First Workflow (No AI)
 
 Set up a basic workflow that triggers on code changes and prints something basic in the output console
 
@@ -50,6 +50,8 @@ Set up a basic workflow that triggers on code changes and prints something basic
 ---
 
 ### Part C: Add Container Building
+
+Yes, you can bring Copilot back for this bit.
 
 Extend your workflow to build your Docker image, we did this locally remember!
 
@@ -110,7 +112,25 @@ Add smart conditions to your workflow. This is what things look like in the real
 
 ---
 
-### Part G: Add Workflow Status Indicators
+### Part G: Push to Azure Container Registry (Main Branch Only)
+
+Now that you understand conditional logic, implement pushing your Docker image to Azure Container Registry, but only when code is merged to the main branch. (bonus points if you use an image tagging strategy to make images with certain tags available from a Pull Request!)
+
+**Your task:**
+- Configure Azure Container Registry credentials as GitHub secrets for now, or Azure Service Principal
+- Add a job or step that pushes the built image to ACR
+- Use conditional logic to ensure this only runs on main branch pushes
+- Tag your image appropriately
+
+**Key considerations:**
+- Authentication to ACR (use service principal or credentials)
+- Image naming conventions in ACR
+- When should images be pushed vs just built?
+- How to verify the push was successful?
+
+---
+
+### Part H: Add Workflow Status Indicators
 
 Make your CI status visible, this is a nice to have
 
@@ -119,18 +139,6 @@ Make your CI status visible, this is a nice to have
 
 ---
 
-### Part H: Handle Secrets and Environment Variables
-
-Learn secure configuration management.
-
-**Practice with:**
-- GitHub repository secrets
-- Environment variables in workflows
-
-**Security considerations:**
-- Never log secrets
-
----
 
 ### Challenge: Optimize Build Performance
 
@@ -153,6 +161,3 @@ Can you find a way to reduce the build time? No hints!
 ✅ Status is clearly visible in repository  
 ✅ Can debug and fix workflow issues  
 ✅ Secrets are handled securely
-
----
-
