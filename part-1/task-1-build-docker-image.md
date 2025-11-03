@@ -65,8 +65,11 @@ Run your containerized application and verify it works.
 
 ---
 
+# To finish
 
-### Repeat the above steps and share between your team until you are happy enough with a Dockerfile for both applications to raise a PR
+### Repeat the above steps and share between your team until you are happy enough with a Dockerfile for both applications to raise a PR for each
+
+Think about the core differences between the two apps and how this reflects in the image you build
 
 
 You may be able to run your app in a fully containerised way here!
