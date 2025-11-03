@@ -1,8 +1,8 @@
-# Task 1: Virtual Networks and Subnets
+# Task 2: Virtual Networks and Subnets
 
 ## Objective
 
-Create an Azure Virtual Network with multiple subnets. Understand network isolation and organization in Azure.
+Create an Azure Virtual Network with multiple subnets. Understand network isolation and organization in Azure. Eventually deploy your container app inside segregated virtual network.
 
 ---
 
@@ -11,6 +11,7 @@ Create an Azure Virtual Network with multiple subnets. Understand network isolat
 - Azure subscription access
 - Basic Terraform knowledge from Part 2
 - Understanding of IP addressing
+- Working Container app deployment
 
 ---
 
@@ -68,3 +69,12 @@ Create NSGs for each subnet with basic rules.
 ✅ Multiple subnets configured  
 ✅ NSGs created and associated  
 ✅ Resources deployed via Terraform
+
+
+---
+
+# Update your application
+
+You can deploy Azure Container Apps within a VNET. Can your team upgrade from the current setup, to container apps within a virtual network?
+
+Hint: One virtual network and subnet direct mapping to one container apps environment. What architectural changes might you need?
