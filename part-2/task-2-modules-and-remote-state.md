@@ -1,8 +1,8 @@
-# Task 3: Remote State and Terraform Modules
+# Task 2: Remote State and Terraform Modules
 
 ## Objective
 
-Implement remote state management and create reusable Terraform modules for team collaboration.
+Implement remote state management and learn how Terraform modules work.
 
 Get that state file out of your laptop!
 
@@ -10,7 +10,7 @@ Get that state file out of your laptop!
 
 ## Prerequisites
 
-- Completed Task 1 & 2 (Basic Terraform, Container Apps)
+- Completed Task 1
 - Existing Terraform project
 
 ---
@@ -52,40 +52,35 @@ Ask Copilot to help you:
 
 ---
 
-## Part 2: Terraform Modules
+## Part 2: Create a Simple Module
 
-Turn your Container App Environment into a reusable module.
+Learn how modules work by creating a reusable resource group module.
 
 ### Your Goal
 
-Create a module for Container App Environment that others can use.
+Create a simple module for resource groups to understand module structure.
+
 
 ### What You Need
 
 Ask Copilot to help you create:
 
-1. **Module directory structure** (`modules/container-app-env/`)
+1. **Module directory structure** (`modules/resource-group/`)
 2. **Module files** (main.tf, variables.tf, outputs.tf)
-3. **Update main project** to use the module
+3. **Use the module** in your main project
 
 ### Module Design
 
-**Inputs:** Environment name, location, resource group  
-**Outputs:** Environment ID, default domain
+**Inputs:**
+- Resource group name
+- Location
 
-### Workflow
-
-1. Create module directory structure
-2. Move environment resources to module
-3. Update main project to call module
-4. `terraform plan` and `terraform apply`
+**Outputs:**
+- Resource group name
+- Resource group ID
 
 ### Success
 
 ✅ Working module in modules/ directory  
 ✅ Main project uses the module  
-✅ Can create multiple environments easily
-
----
-
-**Cleanup:** `terraform destroy` when done
+✅ Understand how modules structure code
