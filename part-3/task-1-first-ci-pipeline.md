@@ -17,43 +17,10 @@ Skip to Part H momentarily if you require a secret for any testing purposes. We 
 
 ## Your Tasks
 
-### Part A: Understand GitHub Actions Basics
-
-Before building, understand what GitHub Actions provides.
-
-**Key concepts to explore:**
-- What are GitHub Actions and workflows?
-- How do workflows trigger automatically?
-- What are runners and where do they execute?
-    - What different types are there and why might I want my own private one?
-- How do actions work as reusable components?
-
-**Think about going old school for this, GitHub docs online are some of the best there is!** No AI
-
----
-
-### Part B: Create Your First Workflow (No AI)
-
-Set up a basic workflow that triggers on code changes and prints something basic in the output console
-
-**Your workflow should:**
-- Trigger on pushes to main branch
-- Trigger on pull requests
-- Checkout your code
-- Display a simple message
-
-**Key learning:**
-- YAML syntax and use
-- Event triggers and when they activate
-- Workflow
-
----
-
-### Part C: Add Container Building
-
-Yes, you can bring Copilot back for this bit.
+### Part A: Add Container Building
 
 Extend your workflow to build your Docker image, we did this locally remember!
+
 
 **Add steps to:**
 - Replicate what you did locally to produce an image from your code
@@ -65,7 +32,7 @@ Extend your workflow to build your Docker image, we did this locally remember!
 
 ---
 
-### Part D: Implement Testing
+### Part B: Implement Testing
 
 Add automated testing to your pipeline.
 
@@ -85,14 +52,14 @@ Add automated testing to your pipeline.
 
 ---
 
-### Part E: Add More Jobs!
+### Part C: Add More Jobs!
 
 Learn about job dependencies and different stages
 
 **Create multiple jobs:**
 - **Test job:** Run tests and quality checks
 - **Build job:** Build container image
-- **Security job:** Run security scans
+- **Security job:** Run security scans using free oss tooling
 
 **Configure dependencies:**
 - Build job should only run if tests pass
@@ -101,7 +68,7 @@ Learn about job dependencies and different stages
 
 ---
 
-### Part F: Implement Conditional Logic
+### Part D: Implement Conditional Logic
 
 Add smart conditions to your workflow. This is what things look like in the real world, sometimes we only want certain things to run on the main branch instead of inside a pull request
 
@@ -112,7 +79,7 @@ Add smart conditions to your workflow. This is what things look like in the real
 
 ---
 
-### Part G: Push to Azure Container Registry (Main Branch Only)
+### Part E: Push to Azure Container Registry (Main Branch Only)
 
 Now that you understand conditional logic, implement pushing your Docker image to Azure Container Registry, but only when code is merged to the main branch. (bonus points if you use an image tagging strategy to make images with certain tags available from a Pull Request!)
 
@@ -130,7 +97,7 @@ Now that you understand conditional logic, implement pushing your Docker image t
 
 ---
 
-### Part H: Add Workflow Status Indicators
+### Part F: Add Workflow Status Indicators (nice to have)
 
 Make your CI status visible, this is a nice to have
 
