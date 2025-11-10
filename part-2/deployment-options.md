@@ -255,6 +255,9 @@ A container engine is the software that:
 
 ### **What is DNS?**
 
+---
+
+
 **DNS = Domain Name System**
 
 Think of it as **the internet's phonebook**
@@ -318,7 +321,7 @@ Think of it as **the internet's phonebook**
 **Automatic DNS names:**
 - Platform provides a domain automatically
 - No need to buy or configure initially
-- Example pattern: `yourapp.platform-name.com`
+- Example pattern: `yourapp.platform-name.azure.com`
 
 **Managed HTTPS/SSL:**
 - Certificates provided and managed
@@ -354,23 +357,13 @@ Think of it as **the internet's phonebook**
 - Automatic renewal
 --- 
 
-**Custom domains (optional):**
-- Easy to add your own domain
-- Certificate management included
-- Simple DNS configuration
-
-**What this means:**
-- Deploy in minutes, not hours
-- No DNS expertise required
-- Secure by default (HTTPS)
-- Focus on your app, not infrastructure
-
----
 ## Caveats!
 
 Whilst the quick Azure given DNS is nice, it is not best practice to use these for clients and customer facing endpoints. How many websites do you visit that have Azure or AWS in the name?
 
 https://facebook.azure.z35.windows.net doesn't quite sound as good
+
+In the real world, you use custom domains
 
 ---
 
@@ -415,15 +408,6 @@ https://facebook.azure.z35.windows.net doesn't quite sound as good
 - Public IP addresses
 - Virtual network integration
 - DNS name labels
----
-
-**Simplicity:**
-- One container, one job
-- No orchestration overhead
-- Start/stop as needed
-
-> **Think:** "I just need to run this one container right now!"
-
 ---
 
 ## Azure App Service
@@ -545,6 +529,8 @@ Scales based on:
 - Scheduled times
 - Other event sources via KEDA
 
+---
+
 **Scale to Zero:**
 - When no requests = no running containers = no cost!
 - Wakes up automatically when traffic arrives
@@ -570,7 +556,6 @@ Scales based on:
 - Manages hundreds or thousands of containers
 - Automatic load balancing
 - Self-healing (restarts failed containers)
-- Automated rollouts and rollbacks
 - Secret and configuration management
 - Storage orchestration
 
@@ -598,28 +583,6 @@ Scales based on:
 
 ---
 
-### **AKS Key Features**
-
-**Kubernetes Power:**
-- Full Kubernetes API access
-- Any Kubernetes tool works
-- Extensive ecosystem (Helm, operators, etc.)
-- Support for Windows and Linux containers
-
-**Azure Integration:**
-- Integrated with Azure services (Monitor, Key Vault, AD)
-- Azure CNI networking
-- Azure Files and Disks for storage
-- Managed identities for security
-
-**Enterprise Features:**
-- Node auto-scaling
-- Pod auto-scaling
-- Multiple node pools
-- Upgrade orchestration
-- Built-in monitoring and logging
-
----
 
 ### **AKS Architecture**
 
@@ -634,30 +597,27 @@ Scales based on:
 ---
 
 **AKS Node Pools:**
-- Worker nodes that run your containers
+- Worker nodes that run your containers (Virtual Machines running Containers? We're really in the cloud now)
 - Can have multiple pools with different VM sizes
 - Automatically managed and patched by Azure
 
 ---
-
-## Comparing Your Options
-
-| Feature | ACI | App Service | Container Apps | AKS |
-|---------|-----|-------------|----------------|-----|
-| **Complexity** | Lowest | Low | Medium | High |
-| **Management** | Minimal | Minimal | Low | Significant |
-| **Scaling** | Manual | Auto | Auto + Event | Full control |
-| **Multi-container** | Limited | Limited | Yes | Yes |
-| **Cost (small app)** | Low | Medium | Low | Higher |
-| **Setup time** | Minutes | Minutes | Minutes | Hours |
+![w:1080 h:550](image.png)
 
 ---
 
+
 ## Real-World Scenarios
+
+Which deployment option to use?
+
+---
 
 ### **Scenario 1: Startup MVP**
 
-**Context:** Small team, limited budget, simple API
+**Context:** Small team, limited budget, simple API, simple frontend?
+
+---
 
 **Best choice:** Azure Container Apps
 - Quick to deploy
@@ -667,22 +627,12 @@ Scales based on:
 
 ---
 
-### **Scenario 2: Enterprise Web Application**
-
-**Context:** Large company, multiple environments, compliance requirements
-
-**Best choice:** Azure App Service (Premium tier)
-- Deployment slots for staging
-- Built-in authentication
-- Compliance certifications
-- Easy VNet integration
-- Managed certificates
-
----
-
-### **Scenario 3: Batch Data Processing**
+### **Scenario 2: Batch Data Processing**
 
 **Context:** Nightly data processing job, runs for 2 hours
+
+
+---
 
 **Best choice:** Azure Container Instances
 - Spin up when needed
@@ -692,49 +642,15 @@ Scales based on:
 
 ---
 
-### **Scenario 4: Complex Microservices Platform**
+### **Scenario 3: Complex Microservices Platform**
 
-**Context:** 50+ microservices, dedicated DevOps team, multi-region
+**Context:** 100+ microservices, dedicated DevOps team, multi-region
+
+
+---
 
 **Best choice:** Azure Kubernetes Service
 - Can handle complexity
 - Team has Kubernetes skills
 - Need advanced networking
 - Require custom operators and tools
-
----
-
-## Development Workflow
-
-### **Local to Cloud**
-
-
-1. **Develop locally** with Docker Desktop
-2. **Build and test** container image
-3. **Push to** Azure Container Registry
-4. **Deploy to** chosen Azure service
-5. **Monitor and iterate**
-
----
-
-## Coming Up: Infrastructure as Code
-
-### **Manual Deployment is Just the Start**
-
-- Define infrastructure in code
-- Terraform for Azure resources
-- Version control your infrastructure
-- Automated deployments
-- Repeatable environments
-
----
-
-## Discussion Points
-
-### **Think About**
-
-1. What type of applications would you deploy on each service?
-2. How would you decide between Container Apps and App Service?
-3. When does the complexity of AKS become worthwhile?
-4. How do cost patterns differ between these services?
-5. What security considerations matter most for your applications?
