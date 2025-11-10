@@ -7,6 +7,8 @@ This repository contains a structured learning path to take you from containeriz
 
 It focusses on Docker, Terraform and Azure, using GitHub Actions.
 
+Content built using Marp to generate PDF slides from .md files.
+
 ## Structure
 
 ### [Introduction](intro/) - Platform Engineering Fundamentals
