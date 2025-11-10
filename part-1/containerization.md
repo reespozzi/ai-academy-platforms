@@ -189,14 +189,24 @@ You've just built your application:
 
 ---
 
+### What is an image?
+
+---
+
+
 ### **The Solution: Containers**
 
 **A container packages everything your app needs:**
 Your code + runtime + dependencies + system tools
+Your image runs in a container
 
 **Result:** Your app runs the **exact same way** everywhere!
 
 > Like a shipping container - travels safely anywhere, contents stay the same.
+
+---
+
+### What's a virtual machine?
 
 ---
 
@@ -272,6 +282,7 @@ Your code + runtime + dependencies + system tools
 ```
 
 ---
+
 
 ## Containers vs Virtual Machines
 
@@ -366,7 +377,7 @@ Your code + runtime + dependencies + system tools
 ## Your Tasks Today
 
 **Learn by doing:**
-1. **Build** a Docker image for your Node.js app
+1. **Build** Docker images for your applications
 2. **Optimize** image size and security
 3. **Push** to Container Registry
 4. **Version** your images properly
