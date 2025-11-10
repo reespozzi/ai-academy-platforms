@@ -12,6 +12,8 @@ You will need to look into container app structures and how you may need to revi
 
 **Suggestion** - Spend some time reading about Container Apps, and think back to our HLD idea. Having this plan before writing your code will help
 
+**Suggestion** - Remember, you can terraform init and plan locally with no backend state to save some pipeline time if needed!
+
 ---
 
 ## Prerequisites
@@ -23,14 +25,14 @@ You will need to look into container app structures and how you may need to revi
 
 ## Your Goal
 
-Get your application running on Azure Container Apps via Terraform in a CI/CD pipeline.
+Get your application running on Azure Container Apps via Terraform in a CI/CD pipeline. Remember not to boil the ocean here, get something working first, and add value as you go. There is another stage after this to get a multi-environment, multi-stage full CI/CD pipeline. For now, focus on getting your code into the cloud, using GitHub Actions.
 
 ## What You Need
 
 Ask Copilot to help you create Terraform configurations for:
 
 1. **Container App Environment** (the platform)  
-2. **Container Apps** (your application, remember you have an image for frontend, and an image for backend)
+2. **Container Apps** (your applications, remember you have an image for frontend, and an image for backend)
 3. **Azure Key Vault** we can no longer define environment variable files locally, secrets must live here, and be referenced as secrets in your Container App, which can then be added as environment variables.
 4. **System Assigned Managed Identity** Lives alongside your resources, used to access both key vault and ACR
 5. **Access to Azure Container Registry and Key Vault** The only hint here is role assignments, you can figure the rest out!
@@ -39,6 +41,7 @@ Ask Copilot to help you create Terraform configurations for:
 ## Key Configuration
 
 - Point to your existing ACR images
+- Add infrastructure directory to your repos
 - Configure public ingress on your frontend app
 - Limit ingress on your backend app, define required port
 - Set up ACR authentication and access to Key Vault (ordering will matter here! See terraform depends_on)
@@ -67,6 +70,11 @@ Ask Copilot to help you create Terraform configurations for:
 
 Practice the Terraform update workflow by changing something (replica count, image tag, etc.) and redeploying.
 
+
+--- 
+
 ### Time for production?
 
 Build your container apps in more than one environment, test that it works, and then and only then go on to build your production instances.
+
+I'm specifically not giving you more information than this, but if you get stuck we can talk about it and draw it out first!

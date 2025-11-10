@@ -53,6 +53,7 @@ Set up a basic workflow that triggers on code changes and prints something basic
 
 Extend your workflow to build your Docker image after everything works, we did this locally remember!
 
+
 **Add steps to:**
 - Replicate what you did locally to produce an image from your code
 
@@ -70,10 +71,11 @@ Learn about job dependencies and different stages
 **Create multiple jobs:**
 - **Test job:** Run tests and quality checks
 - **Build job:** Build container image
-- **Security job:** Run security scans
+- **Security job:** Run security scans using free oss tooling
 
 **Configure dependencies:**
 - Build job should only run if tests pass
+- Make the pipeline a little easier to read in the UI
 - All jobs should run on pull requests
 - Consider which jobs can run in parallel
 
