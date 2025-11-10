@@ -85,6 +85,7 @@ By completing this curriculum, you will:
 - Implement Infrastructure as Code with Terraform
 - Create automated CI/CD pipelines
 - Design secure, scalable cloud architectures
+- Understand the trade-offs between perfect and realistic, based on requirements
 - Apply observability and monitoring best practices
 - Present technical solutions effectively
 - Have something running in the cloud!
