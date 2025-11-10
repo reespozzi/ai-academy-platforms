@@ -33,15 +33,11 @@ Your goal: **Reduce this as much as possible without losing functionality**
 ### Part A: Find and use a smaller base image 
 
 **Your objective:**
-- Research Node.js images
+- Research other images
 - Rebuild your Docker image using this
 - Compare the size difference
 
-**Use AI to help:**
-- "What's the difference between node:18 and node:18-alpine?"
-- "Should I use Alpine for my Node.js application?"
-- "Are there any drawbacks to using Alpine?"
-
+**Beware** Images are smaller because they have less dependencies, dependencies that your app might need
 ---
 
 ### Part B: Implement Multi-Stage Builds
@@ -58,11 +54,6 @@ Multi-stage builds let you separate build dependencies from runtime dependencies
 - What are multi-stage builds?
 - How do they reduce image size?
 - What's the difference between build and runtime dependencies?
-
-**Suggested AI prompts:**
-- "Create a multi-stage Dockerfile for Node.js"
-- "Explain multi-stage builds in Docker"
-- "What should I copy from the builder stage?"
 
 ---
 
@@ -100,7 +91,6 @@ Prevent unnecessary files from being copied into your image.
 - Build artifacts
 
 **Ask AI:**
-- "What should I put in my .dockerignore for a Node.js app?"
 - "Why do I need .dockerignore if I have .gitignore?"
 
 ---

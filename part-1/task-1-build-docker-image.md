@@ -32,7 +32,7 @@ Using AI assistance, create a `Dockerfile` for your application.
 
 **Suggested AI Prompts:**
 - "Create a Dockerfile for my Node.js Express application"
-- "What's the best base image for a pythong fast api application?"
+- "What's the best base image for a python fast api application?"
 - "Explain each line of this Dockerfile"
 
 ---
