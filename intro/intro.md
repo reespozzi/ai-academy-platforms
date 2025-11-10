@@ -189,19 +189,42 @@ footer: 'AI-Native Academy 2025 | Platform Engineering'
 - APIs
 
 ---
+## Spotify and their Golden Path
+
+Any Dune fans?
+
+---
+
+“His spice-induced visions show him a myriad of possible futures where humanity has become extinct and only one where humanity survives. He names this future ‘The Golden Path’ and resolves to bring it to fruition.”
+
+---
+### Perfect Platform Engineering?
+‘opinionated and supported’ path to ‘build something’ (for example, build a backend service, put up a website, create a data pipeline). The Golden Path tutorial is a step-by-step tutorial that walks you through this opinionated and supported path.
+
+How much easier would deploying your application be if the starting point was clicking a button in the UI?
+
+https://engineering.atspotify.com/2020/08/how-we-use-golden-paths-to-solve-fragmentation-in-our-software-ecosystem
+
+---
+
+![w:108000 h:550](golden-path.png)
+
+---
 
 ## Benefits of Platform Engineering
 
-### <span class="emoji">👩‍💻</span> For Developers
+### For Developers
 - **Faster Time to Production** - Minutes, not weeks
 - **Reduced Cognitive Load** - Focus on business logic  
 - **Consistent Experience** - Same tools, same patterns
 
 
 ---
+
+
 ## Benefits of Platform Engineering
 
-### <span class="emoji">🏢</span> For Organizations
+### For Organizations
 - **Improved Velocity** - Faster feature delivery
 - **Better Security** - Built-in best practices
 - **Cost Optimization** - Efficient resource usage
@@ -215,12 +238,12 @@ section p, section li { font-size: 0.90rem; line-height: 1.4; }
 section h3 { font-size: 1.1rem; }
 </style>
 
-🤖 **Intelligent Automation**
+**Intelligent Automation**
 - AI-powered incident response
 - Predictive scaling
 - Automated code reviews
 
-🔮 **Next-Gen Developer Experience**
+**Next-Gen Developer Experience**
 - Natural language infrastructure
 - AI pair programming for ops
 - Intelligent troubleshooting
@@ -238,9 +261,12 @@ section h3 { font-size: 1.1rem; }
 
 This will give you an **application available on the internet!**
 
-What's **wrong** with this?
-![w:700 h:500](heroku.png)
+![w:700 h:450](heroku.png)
 
+
+---
+
+What's **wrong** with this?
 
 ---
 
@@ -248,7 +274,6 @@ What's **wrong** with this?
 You  can get something "live" fast and easily. 
 
 Platform Engineering builds the foundation for sustainable, scalable, and reliable software delivery, how we build things in the real world.
-> You must think first, before you move
 
 
 ---
@@ -256,7 +281,6 @@ Platform Engineering builds the foundation for sustainable, scalable, and reliab
 
 ## Understanding HLD, LLD & F/NFRs
 
-> <span class="green-text">Measure Twice, Cut Once</span>
 
 These artifacts help us:
 - Communicate design decisions
@@ -314,14 +338,6 @@ section h3 { font-size: 1rem; }
 
 ---
 
-**Key Aspects:**
-- <span class="emoji">✅</span> **User Actions** - Login, deploy, configure
-- <span class="emoji">🔄</span> **System Behaviors** - Process requests, store data
-- <span class="emoji">📝</span> **Business Rules** - Validation, workflows
-- <span class="emoji">🔌</span> **Integrations** - External systems, APIs
-
----
-
 ## Functional Requirements (FRs)
 
 **Example FRs for a Platform:**
@@ -346,10 +362,10 @@ section h3 { font-size: 1rem; }
 
 
 **Key Categories:**
-- <span class="emoji">⚡</span> **Performance** - Response times, throughput
-- <span class="emoji">📈</span> **Scalability** - Handle growth
-- <span class="emoji">🔐</span> **Security** - Authentication, encryption
-- <span class="emoji">🛡️</span> **Reliability** - Uptime, disaster recovery
+- **Performance** - Response times, throughput
+- **Scalability** - Handle growth
+- **Security** - Authentication, encryption
+- **Reliability** - Uptime, disaster recovery
 
 
 ---
@@ -367,15 +383,15 @@ What do I mean by **"cloud vendors offer the ultimate platform?"**
 
 ## Azure Example
 
-![w:450 h:450](azure.png)
+![w:750 h:500](azure.png)
 
 ---
 
 **Key Benefits:**
-- <span class="emoji">🚀</span> **Scalability** - Scale resources up or down instantly
-- <span class="emoji">💰</span> **Cost Efficiency** - Pay only for what you use
-- <span class="emoji">🌍</span> **Global Reach** - Deploy anywhere in the world
-- <span class="emoji">⚡</span> **Speed & Agility** - Provision resources in minutes
+- **Scalability** - Scale resources up or down instantly
+- **Cost Efficiency** - Pay only for what you use
+- **Global Reach** - Deploy anywhere in the world
+- **Speed & Agility** - Provision resources in minutes
 
 ---
 
@@ -393,7 +409,7 @@ What do I mean by **"cloud vendors offer the ultimate platform?"**
 ## Cloud Deployment Models
 --- 
 
-### ☁️ **Public Cloud**
+### **Public Cloud**
 - Infrastructure owned by cloud provider
 - Resources shared across multiple organizations
 - Examples: AWS, Azure, GCP
@@ -402,7 +418,7 @@ What do I mean by **"cloud vendors offer the ultimate platform?"**
 ---
 
 
-### 🏢 **Private Cloud**
+### **Private Cloud**
 - Dedicated infrastructure for single organization
 - Greater control and security
 - Can be on-premises or hosted
@@ -410,33 +426,33 @@ What do I mean by **"cloud vendors offer the ultimate platform?"**
 ---
 
 
-### 🔀 **Hybrid Cloud**
+### **Hybrid Cloud**
 - Combination of public and private clouds
 - Data and applications can move between environments
 - **Best for**: Flexibility, compliance requirements, gradual migration
 
 ---
 
-## Major Cloud Vendors
+## Major Cloud Vendors?
 
-### <span class="emoji">☁️</span> **Amazon Web Services (AWS)**
+---
+
+### **Amazon Web Services (AWS)**
 - Market leader, launched 2006
 - 200+ services, largest market share
 
 
-### <span class="emoji">☁️</span> **Microsoft Azure**
+### **Microsoft Azure**
 - Enterprise-focused, excellent Microsoft integration
 - Strong hybrid cloud capabilities
 
 ---
 
-## Major Cloud Vendors
-
-### <span class="emoji">☁️</span> **Google Cloud Platform (GCP)**
+### **Google Cloud Platform (GCP)**
 - Data analytics and ML expertise
 - Strong Kubernetes support (created K8s)
 
-### <span class="emoji">☁️</span> **Others**
+### **Others**
 - IBM Cloud, Oracle Cloud, Alibaba Cloud
 - Digital Ocean, Linode (simpler, developer-focused)
 
