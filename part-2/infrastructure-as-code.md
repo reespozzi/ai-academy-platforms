@@ -176,16 +176,18 @@ footer: 'AI-Native Academy 2025'
 
 ---
 
-## The Problem with "ClickOps"
+## The Problem with "ClickOps"?
+
+---
 
 ### **You've Been Clicking Around the Portal...**
-
-**What happens when you need to:**
+Your application works, but What happens when you need to:
 - Recreate your environment?
 - Deploy to multiple regions?
 - Set up dev, test, and prod environments?
 - Document what you built?
 - Audit history?
+- Someone deletes it?
 
 ---
 
@@ -201,8 +203,6 @@ footer: 'AI-Native Academy 2025'
 
 ## What is Infrastructure as Code?
 
-> Managing and provisioning infrastructure through **code** instead of manual processes
-
 - Write configuration files describing your infrastructure
 - Store them in version control (Git)
 - Run tools to create/update infrastructure automatically
@@ -211,16 +211,19 @@ footer: 'AI-Native Academy 2025'
 ---
 
 ### **Benefits:**
-- ✅ Repeatable and consistent
-- ✅ Version controlled
-- ✅ Documented by default
-- ✅ Testable
-- ✅ Fast to deploy
-- ✅ Easy to destroy and recreate
+✅ Repeatable and consistent
+✅ Version controlled
+✅ Documented by default
+✅ Testable
+✅ Fast to deploy
+✅ Easy to destroy and recreate
 
 ---
 
-## Infrastructure as Code Tools
+## Infrastructure as Code Tools?
+
+
+---
 
 ### **Offerings**
 
@@ -312,18 +315,17 @@ my-infrastructure/
 - Display information after deployment
 - Use in other tools
 
-> Variables go in, outputs come out!
 
 ---
 
 ## Terraform Modules
 
 **Why use modules?**
-- ✅ Reusability across projects
-- ✅ Consistency and standards
-- ✅ Abstraction of complexity
-- ✅ Easier testing
-- ✅ Team collaboration
+✅ Reusability across projects
+✅ Consistency and standards
+✅ Abstraction of complexity
+✅ Easier testing
+✅ Team collaboration
 
 
 ---
@@ -366,7 +368,9 @@ my-infrastructure/
 
 ## State File Management
 
-### <span class="emoji">💾</span> **Terraform's Memory**
+---
+
+###  **Terraform's Memory**
 
 **State file (`terraform.tfstate`)** tracks:
 - What resources exist
@@ -378,18 +382,18 @@ my-infrastructure/
 **Critical importance:**
 - Terraform compares desired state (your .tf files) vs actual state (state file)
 - Determines what changes are needed
-- **Losing state file = disaster!**
+- **Losing state file = massive PAIN!**
 
 ---
 
 ### **State File Challenges**
 
 **Local state problems:**
-- ❌ Not shared between team members
-- ❌ No locking (concurrent changes = corruption)
-- ❌ **Contains sensitive data!**
-- ❌ No versioning or backup
-- ❌ Hard to collaborate
+❌ Not shared between team members
+❌ No locking (concurrent changes = corruption)
+❌ **Contains sensitive data!**
+❌ No versioning or backup
+❌ Hard to collaborate
 
 **For production: NEVER use local state!**
 
@@ -415,7 +419,7 @@ my-infrastructure/
 
 ---
 
-### <span class="emoji">🔒</span> **State Locking**
+### **State Locking**
 
 **Prevents you and I from destroying each others work**
 
