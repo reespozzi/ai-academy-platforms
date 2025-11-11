@@ -27,3 +27,4 @@ This is your chance to build value adds and show off at the end, if you get roun
 - Ask Copilot! In the real world we do not build to a spec in this way, we have to gather requirements, and find something that fits. What else makes sense to add to your deployments and pipelines?
 - What else is [best practice?](https://learn.microsoft.com/en-gb/azure/well-architected/)
   - https://learn.microsoft.com/en-gb/azure/well-architected/service-guides/azure-container-apps
+- Can you take another service from Well-Architected and build from scratch?
