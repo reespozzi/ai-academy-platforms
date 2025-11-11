@@ -16,6 +16,7 @@ This is your chance to build value adds and show off at the end, if you get roun
 
 ## Potential things to look at
 
+- Separate repo for GitHub Actions templates? D.R.Y principles!
 - Try to get working with persistent cloud database instead?
 - Security scanning in pipeline?
 - You have dev and prod, can you add another environment?
@@ -24,3 +25,4 @@ This is your chance to build value adds and show off at the end, if you get roun
 - Can you move your container app into a terraform module and use it for frontend and backend?
 - Build and deploy your own app? Maybe another microservice to fetch and compare market rates for jobs? Get used to docker and terraform workflow
 - Ask Copilot! In the real world we do not build to a spec in this way, we have to gather requirements, and find something that fits. What else makes sense to add to your deployments and pipelines?
+- What else is [best practice?](https://learn.microsoft.com/en-gb/azure/well-architected/)
