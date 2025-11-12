@@ -51,7 +51,7 @@ Set up a basic workflow that triggers on code changes and prints something basic
 
 ### Part C: Add Container Building
 
-Extend your workflow to build your Docker image after everything works, we did this locally remember!
+Extend your workflow to build your Docker image after everything works, we did this locally remember! Don't worry about pushing it for now. Focus on making sure the pipeline is able to build and tag your image without failing. We'll add this functionality to run on every branch for now.
 
 
 **Add steps to:**
@@ -71,7 +71,6 @@ Learn about job dependencies and different stages
 **Create multiple jobs:**
 - **Test job:** Run tests and quality checks
 - **Build job:** Build container image
-- **Security job:** Run security scans using free oss tooling
 
 **Configure dependencies:**
 - Build job should only run if tests pass
