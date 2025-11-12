@@ -2,10 +2,10 @@
 
 ## Objective
 
-Now we have code that runs some tests, builds an image, maybe some more tests, and pushes them to ACR. How do we link it all up?
+Now we have code that runs some tests, builds an image, maybe some more tests. How do we link it all up?
 
 
-Extend your CI pipeline to automatically deploy your application. Push to ACR and deploy infrastructure with Terraform automation.
+Extend your CI pipeline to automatically deploy your application image. Push to ACR and get started with deploying infrastructure with Terraform automation.
 
 ---
 
@@ -15,21 +15,10 @@ Extend your CI pipeline to automatically deploy your application. Push to ACR an
 - Working Terraform from Part 2
 - Azure Container Registry
 
----
-
-
-### Part A: Implement Conditional Logic
-
-Add smart conditions to your workflow. This is what things look like in the real world, sometimes we only want certain things to run on the main branch instead of inside a pull request
-
-**Examples to practice and implement:**
-- Only build images on main branch pushes
-- Skip certain jobs on unrelated file changes
-- Different behavior for pull requests vs main pushes
 
 ---
 
-### Part B: Push to Azure Container Registry (Main Branch Only)
+### Part A: Push to Azure Container Registry (Main Branch Only)
 
 Now that you understand conditional logic, implement pushing your Docker image to Azure Container Registry, but only when code is merged to the main branch. (bonus points if you use an image tagging strategy to make images with certain tags available from a Pull Request!)
 
@@ -42,7 +31,7 @@ You may need to revert the change, and go back to testing if docker build works 
 - Tag your image appropriately
 
 **Key considerations:**
-- Authentication to ACR (use service principal or credentials)
+- Authentication to ACR (use service principal)
 - Image naming conventions in ACR
 - When should images be pushed vs just built?
 - How to verify the push was successful?
@@ -50,19 +39,20 @@ You may need to revert the change, and go back to testing if docker build works 
 ---
 
 
-### Part C: Prepare Terraform for Automation
+### Part B: Prepare Terraform for Automation
 
 Update your Terraform code to work in a pipeline environment, let's use a "dev" naming convention for now, since technically we're still developing things. Write your code in such a way that it will be easy to add a "prod" version of resources later!
 
 **Make your Terraform pipeline-ready:**
 - Use remote state (from Part 2 tasks)
 - Add environment variables for dynamic naming - dev!
-- Ensure it can run without interactive input
+- Infrastructure folder now in your application code
+- Ensure it can run without interactive input if on the main branch - plan only on branches
 - Consider service principal authentication
 
 ---
 
-### Part D: Create Terraform Deployment Job
+### Part C: Create Terraform Deployment Job
 
 Add a new job to deploy infrastructure automatically. We can keep a resource group only for now, we need a shell pipeline though.
 
