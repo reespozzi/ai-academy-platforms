@@ -17,6 +17,12 @@ This is your chance to build value adds and show off at the end, if you get roun
 ## Potential things to look at
 
 - Separate repo for GitHub Actions templates? D.R.Y principles!
+- Container Images cleanup (older than 48H and not the latest (not latest tag) version
+- Auto-Shutdown functionality? How can we turn this off overnight, and have it turn back on in the morning? Saves money!
+- Tagging terraform module?
+  - builtFrom (which repo?)
+  - teamName
+  - environment
 - Try to get working with persistent cloud database instead?
 - Security scanning in pipeline?
 - You have dev and prod, can you add another environment?
