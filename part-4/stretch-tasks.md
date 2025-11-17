@@ -16,22 +16,29 @@ This is your chance to build value adds and show off at the end, if you get roun
 
 ## Potential things to look at
 
+- Try to get working with persistent cloud database instead?
+
+
+- What else is [best practice?](https://learn.microsoft.com/en-gb/azure/well-architected/)
+  - https://learn.microsoft.com/en-gb/azure/well-architected/service-guides/azure-container-apps
+
+
+- Security scanning in pipeline?
+
 - Separate repo for GitHub Actions templates? D.R.Y principles!
-- Container Images cleanup (older than 48H and not the latest (not latest tag) version
+
+- Can you move your container app into a terraform module and use it for frontend and backend?
+
 - Auto-Shutdown functionality? How can we turn this off overnight, and have it turn back on in the morning? Saves money!
 - Tagging terraform module?
   - builtFrom (which repo?)
   - teamName
   - environment
-- Try to get working with persistent cloud database instead?
-- Security scanning in pipeline?
+- Container Images cleanup (older than 48H and not the latest (not latest tag) version
 - You have dev and prod, can you add another environment?
   - Can you run a test suite against the deployed service?
 - How do you know if your service has gone down? Can you add a delayed app breaker and detect it?
 - Can you get a nice monitoring dashboard with Grafana?
-- Can you move your container app into a terraform module and use it for frontend and backend?
 - Build and deploy your own app? Maybe another microservice to fetch and compare market rates for jobs? Get used to docker and terraform workflow
 - Ask Copilot! In the real world we do not build to a spec in this way, we have to gather requirements, and find something that fits. What else makes sense to add to your deployments and pipelines?
-- What else is [best practice?](https://learn.microsoft.com/en-gb/azure/well-architected/)
-  - https://learn.microsoft.com/en-gb/azure/well-architected/service-guides/azure-container-apps
 - Can you take another service from Well-Architected and build from scratch?
