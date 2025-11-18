@@ -14,7 +14,7 @@ This is your chance to build value adds and show off at the end, if you get roun
 
 ---
 
-## Potential things to look at
+## Potential things to look at in no particular order
 
 - Try to get working with persistent cloud database instead?
 
