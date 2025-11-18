@@ -36,8 +36,8 @@ Get your application running on Azure Container Apps via Terraform in a CI/CD pi
 1. **Azure Key Vault** we can no longer define environment variable files locally, secrets must live here, and be referenced as secrets in your Container App, which can then be added as environment variables. Do not define this in code, build your key vault with Terraform, and manually add your secrets in the portal.
 2. **User Assigned Managed Identity** Will be used to access Key Vault and Azure Container Registry.
 3. **Container App Environment** (the platform)  
-4. **Container Apps** (your applications, remember you have an image for frontend, and an image for backend) Only the frontend should be public facing.
-5. **Access to Azure Container Registry and Key Vault** The only hint here is role assignments, you can figure the rest out!
+4. **Access to Azure Container Registry and Key Vault** The only hint here is role assignments for your managed identity, you can figure the rest out!
+5. **Container Apps** (your applications, remember you have an image for frontend, and an image for backend) Only the frontend should be public facing.
 
 
 
