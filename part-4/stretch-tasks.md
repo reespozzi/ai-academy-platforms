@@ -38,6 +38,7 @@ This is your chance to build value adds and show off at the end, if you get roun
 - You have dev and prod, can you add another environment?
   - Can you run a test suite against the deployed service?
 - How do you know if your service has gone down? Can you add a delayed app breaker and detect it?
+- tfcmt?
 - Can you get a nice monitoring dashboard with Grafana?
 - Build and deploy your own app? Maybe another microservice to fetch and compare market rates for jobs? Get used to docker and terraform workflow
 - Ask Copilot! In the real world we do not build to a spec in this way, we have to gather requirements, and find something that fits. What else makes sense to add to your deployments and pipelines?
