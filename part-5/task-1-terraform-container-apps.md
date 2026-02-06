@@ -1,6 +1,6 @@
 # Task 1: Deploy Container Apps with Terraform
 
-It's finally time to bring your apps to life and work more like a Platform Engineer
+It's finally time to bring your apps to life and work more like a Platform Engineer. Build this out in stages, it will make your life a lot easier.
 
 ## Objective
 
@@ -89,7 +89,8 @@ Or, you can update in your code directly to pull from Azure Key Vault at runtime
 
 ✅ Deployed entirely through Terraform automation
 
----
+✅ Ability to toggle features on/off when deployed
+
 ---
 
 
@@ -97,11 +98,9 @@ Or, you can update in your code directly to pull from Azure Key Vault at runtime
 
 ### Deploy and Test
 
-1. Initialize Terraform: `terraform init`
-2. Plan deployment: `terraform plan`
-3. Apply configuration: `terraform apply`
-4. Test your application via the generated URL
-5. Think about what changes you might make to your pipeline to validate a change
+1. Run your CICD pipeline
+2. Test your application via the generated URL
+3. Think about what changes you might make to your pipeline to validate a change
 
 ### Make One Update
 

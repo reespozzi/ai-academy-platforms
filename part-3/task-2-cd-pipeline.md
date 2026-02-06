@@ -70,5 +70,7 @@ Think back to conditional logic, maybe a terraform plan on branches might be use
 
 
 Now:
+
 ✅ Image pushed conditionally to Azure Container Registry
+
 ✅ Basic Terraform workflow setup
