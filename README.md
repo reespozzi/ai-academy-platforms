@@ -1,3 +1,8 @@
+
+> [!WARNING]  
+> Repo now lives internally and this will no longer be maintained
+
+
 # AI Academy Platforms 2025
 
 Learning for select **Platform Engineering** concepts, practices, and hands-on implementation using modern cloud-native technologies.
