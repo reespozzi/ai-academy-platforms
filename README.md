@@ -53,7 +53,7 @@ Content built using Marp to generate PDF slides from .md files.
   - Connect isolated VNets with peering
   - Stretch goals for advanced implementations
 
-### [Stretch Goals](part-4/) - Make it awesome
+### [Stretch Goals](part-5/) - Make it awesome
 - Add value to your solution
 - Add as much as you can to make this "production ready" in the time you have
 
