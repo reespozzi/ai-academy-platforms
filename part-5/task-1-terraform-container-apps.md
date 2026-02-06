@@ -1,10 +1,12 @@
 # Task 1: Deploy Container Apps with Terraform
 
-It's finally time to bring your apps to life and work more like a Platform Engineer
+It's finally time to bring your apps to life and work more like a Platform Engineer. Build this out in stages, it will make your life a lot easier.
 
 ## Objective
 
-Deploy your containerized application to Azure Container Apps using Terraform.
+- Deploy your containerized application to Azure Container Apps using Terraform.
+
+- Retain the ability to feature flag
 
 You will need to look into container app structures and how you may need to revisit terraform given your requirement to build two applications.
 
@@ -47,6 +49,7 @@ Get your application running on Azure Container Apps via Terraform in a CI/CD pi
 - Add infrastructure directory to your repos
 - Configure public ingress on your frontend app
 - Limit ingress on your backend app, define required port
+- Use environment variables in your container app delpoyment to toggle feature flags
 - Use secrets in the [container app terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_app#secret-1). You can then reference these in the [env](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_app#env-1) parameter For example;
 ```
 ....
@@ -86,7 +89,8 @@ Or, you can update in your code directly to pull from Azure Key Vault at runtime
 
 ✅ Deployed entirely through Terraform automation
 
----
+✅ Ability to toggle features on/off when deployed
+
 ---
 
 
@@ -94,11 +98,9 @@ Or, you can update in your code directly to pull from Azure Key Vault at runtime
 
 ### Deploy and Test
 
-1. Initialize Terraform: `terraform init`
-2. Plan deployment: `terraform plan`
-3. Apply configuration: `terraform apply`
-4. Test your application via the generated URL
-5. Think about what changes you might make to your pipeline to validate a change
+1. Run your CICD pipeline
+2. Test your application via the generated URL
+3. Think about what changes you might make to your pipeline to validate a change
 
 ### Make One Update
 
