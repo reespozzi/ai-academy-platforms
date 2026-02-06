@@ -4,7 +4,9 @@ It's finally time to bring your apps to life and work more like a Platform Engin
 
 ## Objective
 
-Deploy your containerized application to Azure Container Apps using Terraform.
+- Deploy your containerized application to Azure Container Apps using Terraform.
+
+- Retain the ability to feature flag
 
 You will need to look into container app structures and how you may need to revisit terraform given your requirement to build two applications.
 
@@ -47,6 +49,7 @@ Get your application running on Azure Container Apps via Terraform in a CI/CD pi
 - Add infrastructure directory to your repos
 - Configure public ingress on your frontend app
 - Limit ingress on your backend app, define required port
+- Use environment variables in your container app delpoyment to toggle feature flags
 - Use secrets in the [container app terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_app#secret-1). You can then reference these in the [env](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_app#env-1) parameter For example;
 ```
 ....
