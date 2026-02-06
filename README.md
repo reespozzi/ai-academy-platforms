@@ -39,18 +39,19 @@ Content built using Marp to generate PDF slides from .md files.
   - Create CD pipeline with conditional deployments
   - Integrate container registry and infrastructure automation
 
-### [Part 4: Azure Platform](part-4/) - Cloud-Native Architecture
+
+### [Part 4: Observability](part-4/) - Monitoring & Operations
+- **Concepts**: Three pillars of observability (metrics, logs, traces)
+- Monitoring strategies, alerting, and health checks
+- Structured logging and correlation
+
+### [Part 5: Azure Platform](part-5/) - Cloud-Native Architecture
 - **Concepts**: Azure networking, security (IAM, NSGs), PaaS vs IaaS
 - **Tasks**:
   - Deploy Container Apps with Terraform
   - Configure virtual networks and subnets
   - Connect isolated VNets with peering
   - Stretch goals for advanced implementations
-
-### [Part 5: Observability](part-5/) - Monitoring & Operations
-- **Concepts**: Three pillars of observability (metrics, logs, traces)
-- Monitoring strategies, alerting, and health checks
-- Structured logging and correlation
 
 ### [Stretch Goals](part-4/) - Make it awesome
 - Add value to your solution
